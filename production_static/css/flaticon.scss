@@ -1,0 +1,125 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?da946c5900b13f2182c25af09cd1edfc") format("truetype"),
+url("./flaticon.woff?da946c5900b13f2182c25af09cd1edfc") format("woff"),
+url("./flaticon.woff2?da946c5900b13f2182c25af09cd1edfc") format("woff2"),
+url("./flaticon.eot?da946c5900b13f2182c25af09cd1edfc#iefix") format("embedded-opentype"),
+url("./flaticon.svg?da946c5900b13f2182c25af09cd1edfc#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "24-hours-support": "\f101",
+    "24-hours": "\f102",
+    "automobile": "\f103",
+    "availability": "\f104",
+    "bus-1": "\f105",
+    "bus-2": "\f106",
+    "bus-driver-1": "\f107",
+    "bus-driver": "\f108",
+    "bus": "\f109",
+    "choices": "\f10a",
+    "contract": "\f10b",
+    "dance": "\f10c",
+    "delivery": "\f10d",
+    "destination": "\f10e",
+    "discount": "\f10f",
+    "file": "\f110",
+    "low-price": "\f111",
+    "low-prices": "\f112",
+    "luggage": "\f113",
+    "minibus": "\f114",
+    "sales": "\f115",
+    "seminar": "\f116",
+    "sunbathing": "\f117",
+    "travel-map": "\f118",
+    "wedding-couple": "\f119",
+);
+
+.flaticon-24-hours-support:before {
+    content: map-get($flaticon-map, "24-hours-support");
+}
+.flaticon-24-hours:before {
+    content: map-get($flaticon-map, "24-hours");
+}
+.flaticon-automobile:before {
+    content: map-get($flaticon-map, "automobile");
+}
+.flaticon-availability:before {
+    content: map-get($flaticon-map, "availability");
+}
+.flaticon-bus-1:before {
+    content: map-get($flaticon-map, "bus-1");
+}
+.flaticon-bus-2:before {
+    content: map-get($flaticon-map, "bus-2");
+}
+.flaticon-bus-driver-1:before {
+    content: map-get($flaticon-map, "bus-driver-1");
+}
+.flaticon-bus-driver:before {
+    content: map-get($flaticon-map, "bus-driver");
+}
+.flaticon-bus:before {
+    content: map-get($flaticon-map, "bus");
+}
+.flaticon-choices:before {
+    content: map-get($flaticon-map, "choices");
+}
+.flaticon-contract:before {
+    content: map-get($flaticon-map, "contract");
+}
+.flaticon-dance:before {
+    content: map-get($flaticon-map, "dance");
+}
+.flaticon-delivery:before {
+    content: map-get($flaticon-map, "delivery");
+}
+.flaticon-destination:before {
+    content: map-get($flaticon-map, "destination");
+}
+.flaticon-discount:before {
+    content: map-get($flaticon-map, "discount");
+}
+.flaticon-file:before {
+    content: map-get($flaticon-map, "file");
+}
+.flaticon-low-price:before {
+    content: map-get($flaticon-map, "low-price");
+}
+.flaticon-low-prices:before {
+    content: map-get($flaticon-map, "low-prices");
+}
+.flaticon-luggage:before {
+    content: map-get($flaticon-map, "luggage");
+}
+.flaticon-minibus:before {
+    content: map-get($flaticon-map, "minibus");
+}
+.flaticon-sales:before {
+    content: map-get($flaticon-map, "sales");
+}
+.flaticon-seminar:before {
+    content: map-get($flaticon-map, "seminar");
+}
+.flaticon-sunbathing:before {
+    content: map-get($flaticon-map, "sunbathing");
+}
+.flaticon-travel-map:before {
+    content: map-get($flaticon-map, "travel-map");
+}
+.flaticon-wedding-couple:before {
+    content: map-get($flaticon-map, "wedding-couple");
+}

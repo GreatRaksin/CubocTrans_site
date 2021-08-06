@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?da946c5900b13f2182c25af09cd1edfc") format("truetype"),
+url("./flaticon.woff?da946c5900b13f2182c25af09cd1edfc") format("woff"),
+url("./flaticon.woff2?da946c5900b13f2182c25af09cd1edfc") format("woff2"),
+url("./flaticon.eot?da946c5900b13f2182c25af09cd1edfc#iefix") format("embedded-opentype"),
+url("./flaticon.svg?da946c5900b13f2182c25af09cd1edfc#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-24-hours-support:before {
+    content: "\f101";
+}
+.flaticon-24-hours:before {
+    content: "\f102";
+}
+.flaticon-automobile:before {
+    content: "\f103";
+}
+.flaticon-availability:before {
+    content: "\f104";
+}
+.flaticon-bus-1:before {
+    content: "\f105";
+}
+.flaticon-bus-2:before {
+    content: "\f106";
+}
+.flaticon-bus-driver-1:before {
+    content: "\f107";
+}
+.flaticon-bus-driver:before {
+    content: "\f108";
+}
+.flaticon-bus:before {
+    content: "\f109";
+}
+.flaticon-choices:before {
+    content: "\f10a";
+}
+.flaticon-contract:before {
+    content: "\f10b";
+}
+.flaticon-dance:before {
+    content: "\f10c";
+}
+.flaticon-delivery:before {
+    content: "\f10d";
+}
+.flaticon-destination:before {
+    content: "\f10e";
+}
+.flaticon-discount:before {
+    content: "\f10f";
+}
+.flaticon-file:before {
+    content: "\f110";
+}
+.flaticon-low-price:before {
+    content: "\f111";
+}
+.flaticon-low-prices:before {
+    content: "\f112";
+}
+.flaticon-luggage:before {
+    content: "\f113";
+}
+.flaticon-minibus:before {
+    content: "\f114";
+}
+.flaticon-sales:before {
+    content: "\f115";
+}
+.flaticon-seminar:before {
+    content: "\f116";
+}
+.flaticon-sunbathing:before {
+    content: "\f117";
+}
+.flaticon-travel-map:before {
+    content: "\f118";
+}
+.flaticon-wedding-couple:before {
+    content: "\f119";
+}
