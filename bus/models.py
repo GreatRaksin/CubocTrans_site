@@ -38,7 +38,6 @@ class Contact(models.Model):
     transport = models.CharField('Тип транспорта', max_length=150)
     unloading_place = models.CharField('Место выгрузки', max_length=150)
     cost = models.CharField('Стоимость груза', max_length=150, required=True)
-    transport = models.CharField('Тип транспорта', max_length=150)
     message = models.TextField('Дополнительно', max_length=500, blank=True)
 
     class Meta:
