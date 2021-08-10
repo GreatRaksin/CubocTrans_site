@@ -26,15 +26,24 @@ class Head(models.Model):
 
 
 class Contact(models.Model):
-    f_name = models.CharField('Имя', max_length=50, blank=True)
-    l_name = models.CharField('Фамилия', max_length=50, blank=True)
-    email = models.EmailField('Емейл', max_length=50, blank=True)
-    subject = models.CharField('Тема', max_length=50, blank=True)
-    message = models.TextField('Сообщение', max_length=500, blank=True)
+    company_name = models.CharField('Название вашей компании', max_length=50, blank=True)
+    phone = models.CharField('Телефон', max_length=50, blank=True)
+    email = models.EmailField('E-mail', max_length=50, blank=True)
+    loading_date = models.DateField('Дата загрузки', blank=True)
+    loading_place = models.CharField('Место загрузки', max_length=120, required=True)
+    weight = models.FloatField('Общий вес (кг)', blank=True)
+    cargo_name = models.CharField('Наименование груза', max_length=50, required=True)
+    cc_place = models.CharField('Место растаможки', max_length=50, required=True)
+    volume = models.FloatField('Объем')
+    transport = models.CharField('Тип транспорта', max_length=150)
+    unloading_place = models.CharField('Место выгрузки', max_length=150)
+    cost = models.CharField('Стоимость груза', max_length=150, required=True)
+    transport = models.CharField('Тип транспорта', max_length=150)
+    message = models.TextField('Дополнительно', max_length=500, blank=True)
 
     class Meta:
-        verbose_name = 'Сообщение с сайта'
-        verbose_name_plural = 'Сообщения с сайта'
+        verbose_name = 'Запрос на перевозку'
+        verbose_name_plural = 'Запросы на перевозку'
 
     def __str__(self):
-        return f'{self.l_name} {self.f_name}, {self.email}'
+        return f'{self.company_name} {self.phone}, {self.email}'
