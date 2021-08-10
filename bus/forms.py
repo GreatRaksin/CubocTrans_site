@@ -9,14 +9,30 @@ class UserForm(ModelForm):
         model = Contact
         fields = '__all__'
         widgets = {
-            'l_name': forms.TextInput(attrs={'placeholder': 'Имя',
+            'company_name': forms.TextInput(attrs={'placeholder': 'Название компании',
                                              'class': 'form-control'}),
-            'f_name': forms.TextInput(attrs={'placeholder': 'Фамилия',
+            'phone': forms.TextInput(attrs={'placeholder': 'Телефон',
                                              'class': 'form-control'}),
             'email': forms.TextInput(attrs={'placeholder': 'E-Mail',
                                             'class': 'form-control'}),
-            'subject': forms.TextInput(attrs={'placeholder': 'Тема',
+            'loading_date': forms.TextInput(attrs={'placeholder': 'Дата загрузки',
                                               'class': 'form-control'}),
+            'loading_place': forms.TextInput(attrs={'placeholder': 'Место загрузки',
+                                       'class': 'form-control'}),
+            'weight': forms.TextInput(attrs={'placeholder': 'Общая масса (кг)',
+                                       'class': 'form-control'}),
+            'cargo_name': forms.TextInput(attrs={'placeholder': 'Наименование груза',
+                                       'class': 'form-control'}),
+            'cc_place': forms.TextInput(attrs={'placeholder': 'Место растаможки',
+                                       'class': 'form-control'}),
+            'volume': forms.TextInput(attrs={'placeholder': 'Объем',
+                                       'class': 'form-control'}),
+            'transport': forms.TextInput(attrs={'placeholder': 'Тип транспорта',
+                                       'class': 'form-control'}),
+            'unloading_place': forms.TextInput(attrs={'placeholder': 'Место выгрузки',
+                                       'class': 'form-control'}),
+            'cost': forms.TextInput(attrs={'placeholder': 'Стоимость груза',
+                                       'class': 'form-control'}),
             'message': forms.Textarea(attrs={'placeholder': 'Сообщение',
                                               'class': 'form-control'})
         }
