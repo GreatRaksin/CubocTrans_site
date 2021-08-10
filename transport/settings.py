@@ -28,7 +28,7 @@ SECRET_KEY = 'dfjhwo4290dj2jewndp32f9342fjlwkejd23d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'bus-comfort.by']
+ALLOWED_HOSTS = ['*', '127.0.0.1']
 
 
 # Application definition

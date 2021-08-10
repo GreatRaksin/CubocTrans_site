@@ -4,10 +4,10 @@ import os
 
 
 class Head(models.Model):
-    title = models.CharField('Title страницы', max_length=120, blank=True,)
-    title_on_image = models.CharField('Заголовок на главном фото', max_length=50, blank=True,)
-    logo = models.CharField('Лого', max_length=30, blank=True,)
-    image = models.FileField('Главное фото', blank=True)
+    title = models.CharField('Title страницы', max_length=120, blank=True, default='AAA')
+    title_on_image = models.CharField('Заголовок на главном фото', max_length=50, blank=True, default='FFF')
+    logo = models.CharField('Лого', max_length=30, blank=True, default='КУБКОТРАНС')
+    image = models.FileField('Главное фото', blank=True, default='static/images/blog_1.jpg')
 
     def image_preview(self):
         if self.image:
@@ -29,15 +29,15 @@ class Contact(models.Model):
     company_name = models.CharField('Название вашей компании', max_length=50, blank=True)
     phone = models.CharField('Телефон', max_length=50, blank=True)
     email = models.EmailField('E-mail', max_length=50, blank=True)
-    loading_date = models.DateField('Дата загрузки', blank=True)
-    loading_place = models.CharField('Место загрузки', max_length=120, required=True)
-    weight = models.FloatField('Общий вес (кг)', blank=True)
-    cargo_name = models.CharField('Наименование груза', max_length=50, required=True)
-    cc_place = models.CharField('Место растаможки', max_length=50, required=True)
-    volume = models.FloatField('Объем')
-    transport = models.CharField('Тип транспорта', max_length=150)
-    unloading_place = models.CharField('Место выгрузки', max_length=150)
-    cost = models.CharField('Стоимость груза', max_length=150, required=True)
+    loading_date = models.DateField('Дата загрузки', blank=True, default='2012-01-01')
+    loading_place = models.CharField('Место загрузки', max_length=120, blank=True)
+    weight = models.FloatField('Общий вес (кг)', blank=True, default=0.1)
+    cargo_name = models.CharField('Наименование груза', max_length=50, default='Груз')
+    cc_place = models.CharField('Место растаможки', max_length=50, blank=True)
+    volume = models.FloatField('Объем', blank=True, default=0.1)
+    transport = models.CharField('Тип транспорта', max_length=150, blank=True)
+    unloading_place = models.CharField('Место выгрузки', max_length=150, blank=True)
+    cost = models.CharField('Стоимость груза', max_length=150, blank=True)
     message = models.TextField('Дополнительно', max_length=500, blank=True)
 
     class Meta:
