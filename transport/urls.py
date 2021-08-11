@@ -22,11 +22,11 @@ from django.conf import settings
 from django.db import models
 from django.views.generic import TemplateView
 
-admin.site.site_header = 'Кубоктранс'  # Вместо "Администрирование Django" в админке
+admin.site.site_header = 'Кубоктранс | Международные перевозки'  # Вместо "Администрирование Django" в админке
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_view, name="index"), #IndexView.as_view()
+    path('', index_view, name="index"),
     path('contact', contact_view, name='contact'),
     path('success', success_view, name='success'),
 
