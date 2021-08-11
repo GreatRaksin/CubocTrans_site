@@ -2,7 +2,11 @@
 {% load static %}
 <html lang="en">
 <head>
-    <title>{{ object_list.first.title }}</title>
+    {% if object_list.first.title %}
+        <title>{{ object_list.first.title }}</title>
+    {% else %}
+        <title>Кубоктранс | Международные перевозки</title>
+    {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
