@@ -38,5 +38,6 @@ def contact_view(request):
 
 
 def success_view(request):
+    # TODO: сделать нормальную страницу успех
     return render(request, 'success.html')
 
