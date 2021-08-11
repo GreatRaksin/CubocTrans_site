@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.safestring import mark_safe
+from django.utils import timezone
 import os
+import datetime
 
 
 class Head(models.Model):
@@ -29,7 +31,7 @@ class Contact(models.Model):
     company_name = models.CharField('Название вашей компании', max_length=50, blank=True)
     phone = models.CharField('Телефон', max_length=50, blank=True)
     email = models.EmailField('E-mail', max_length=50, blank=True)
-    loading_date = models.DateField('Дата загрузки', blank=True, default='2012-01-01')
+    loading_date = models.DateField('Дата загрузки', default=timezone.now())
     loading_place = models.CharField('Место загрузки', max_length=120, blank=True)
     weight = models.FloatField('Общий вес (кг)', blank=True, default=0.1)
     cargo_name = models.CharField('Наименование груза', max_length=50, default='Груз')

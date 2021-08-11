@@ -22,33 +22,51 @@
                     {% csrf_token %}
                     <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
+                            {{ form.company_name.label }}
                             {{ form.company_name }}
                         </div>
                         <div class="col-md-6">
+                            {{ form.phone.label }}
                             {{ form.phone }}
                         </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
+                            {{ form.email.label }}
                             {{ form.email }}
                         </div>
                         <div class="col-md-6">
+                            {{ form.loading_date.label }}
                             {{ form.loading_date }}
                         </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
+                            {{ form.weight.label }}
                             {{ form.weight }}
                         </div>
                         <div class="col-md-6">
+                            {{ form.cargo_name.label }}
                             {{ form.cargo_name }}
                         </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
+                            {{ form.cc_place.label }}
                             {{ form.cc_place }}
                         </div>
                         <div class="col-md-6">
+                            {{ form.volume.label }}
                             {{ form.volume }}
                         </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col-md-6 mb-3 mb-md-0">
+                            {{ form.transport.label }}
                             {{ form.transport }}
                         </div>
                         <div class="col-md-6">
+                            {{ form.unloading_place.label }}
                             {{ form.unloading_place }}
                         </div>
                     </div>
@@ -56,12 +74,14 @@
                     <div class="row form-group">
 
                         <div class="col-md-12">
+                            {{ form.cost.label }}
                             {{ form.cost }}
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
+                            {{ form.message.label }}
                             {{ form.message }}
                         </div>
                     </div>
