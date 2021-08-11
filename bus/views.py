@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.http import HttpResponse, HttpResponseRedirect
-from bus.models import Head, Contact
+from bus.models import Head, Contact, Partner
 from .forms import UserForm
 from django.views.generic.edit import FormView
 from django.core.mail import send_mail
@@ -11,6 +11,12 @@ class IndexView(ListView):
     context_object_name = 'index'
     template_name = 'index.html'
     queryset = Head.objects.all()
+
+def index_view(request):
+    context = {'object_list': Head.objects.all(),
+               'partners': Partner.objects.all()}
+    return render(request, 'index.html', context)
+
 
 # TODO: сделать генерацию партнеров
 #  Сетка из логотипов, отображается лого-ссылка

@@ -17,6 +17,10 @@
                     <p><a href="{% url 'contact' %}" class="btn btn-primary py-3 px-5 text-white">Рассчитать стоимость
                         перевозки</a></p>
 
+                    {% for partner in object_list %}
+                        {{ partner.name }}
+                    {% endfor %}
+
                 </div>
             </div>
         </div>
