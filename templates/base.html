@@ -53,11 +53,11 @@
 
                     <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                         <li class="active"><a href="{% url 'index' %}">Начало</a></li>
-                        <li><a href="#about">О компании</a></li>
-                        <li><a href="#how_to_order">Как заказать</a></li>
-                        <li><a href="#more_services"> Маршруты</a></li>
-                        <li><a href="#testimonials">Отзывы</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="{% url 'index' %}#about">О компании</a></li>
+                        <li><a href="{% url 'index' %}#how_to_order">Как заказать</a></li>
+                        <li><a href="{% url 'index' %}#more_services"> Маршруты</a></li>
+                        <li><a href="{% url 'index' %}#testimonials">Отзывы</a></li>
+                        <li><a href="{% url 'index' %}#contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
