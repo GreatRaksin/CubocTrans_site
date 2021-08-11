@@ -12,7 +12,10 @@
 
 
                     <h1 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">{{ object_list.first.title_on_image }}</h1>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary py-3 px-5 text-white">Рассчитать стоимость перевозки</a></p>
+                    <p class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">С 1998 года на рынке
+                        транспортных услуг</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary py-3 px-5 text-white">Рассчитать стоимость
+                        перевозки</a></p>
 
                 </div>
             </div>
@@ -26,17 +29,17 @@
                     <div class="icon">
                         <span class="icon-dollar"></span>
                     </div>
-                    <h2 class="my-4 heading">Лучшие цены</h2>
-                    <p>Собственный парк современных автобусов и продуманная стратегия развития позволяют нам удерживать
-                        низкие цены.</p>
+                    <h2 class="my-4 heading">Себестоимость</h2>
+                    <p>Через логистическую составляющую мы считаем себестоимость ваших товаров и повышаем уровень вашего
+                        сервиса за счет ускорения прохождения заказов до конечного покупателя.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="free-quote bg-dark h-100">
-                    <h2 class="my-4 heading  text-center">Мы всегда на связи</h2>
-                    <h2 class="my-4 heading  text-center">Звоните:</h2>
-                    <h2 style="line-height: 1.5;" class="my-4 heading  text-center"><a href="tel:+375296538874">+375(29)653-88-74</a><br>
-                        <a href="tel:+375296425966">+375(29)642-59-66</a></h2>
+                    <h2 class="my-4 heading  text-center">Наша главная задача</h2>
+                    <p style="line-height: 1.5;" class="my-4 text-center">
+                        Мы работаем вместе с вами и напрямую заинтересованы в развитии вашего бизнеса.<br>
+                    </p>
 
                 </div>
             </div>
@@ -46,8 +49,8 @@
                         <span class="icon-phone"></span>
                     </div>
                     <h2 class="my-4 heading">24/7 Доступны</h2>
-                    <p>Благодаря круглосуточной системе технической поддержки мы быстро решаем большинство проблем
-                        клиентов в дороге.</p>
+                    <p>Ежегодно мы выполняем более 1000 перевозок. Наличие собственного автопарка, насчитывающего более
+                        10 современных тягачей, позволяет нам оперативно и качественно доставить ваш груз.</p>
                 </div>
             </div>
         </div>
@@ -64,23 +67,25 @@
                     <div class="text-left pb-1 border-primary mb-4">
                         <h2 class="text-primary">О компании</h2>
                     </div>
-                    <p style="font-family: 'Open Sans', sans-serif;">Компания "Bus-Comfort" работает на рынке
-                        транспортных услуг уже не один год. Специализируясь на
-                        пассажирских перевозках, мы добились высоких позиций в рейтинге транспортных компаний и уважения
-                        у клиентов.</p>
-                    <p style="font-family: 'Open Sans', sans-serif;" class="mb-5">Несомненным преимуществом компании
+                    <p style="font-family: 'Open Sans', sans-serif;">"Кубоктранс" работает на рынке
+                        транспортных услуг с 1998 года. Специализируясь на
+                        крупногабаритных грузоперевозках, мы добились высоких позиций
+                        в рейтинге транспортных компаний и уважения у клиентов.</p>
+                    <p style="font-family: 'Open Sans', sans-serif;" class="mb-4">Несомненным преимуществом компании
                         является
-                        парк современных автобусов "Neoplan', позволяющих осуществлять поездки на любые расстояния.</p>
+                        парк современных тягачей, соответствующих всем европейским стандартам.</p>
+                    <p>Среди наших тягачей: <b>DAF 105</b>, <b>Mercedes Actros</b>, <b>MAN TGX</b>, <b>Reanult Magnum</b></p>
 
                     <div class="row">
                         <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
                             <div class="unit-4">
-                                <div class="unit-4-icon mb-3 mr-4"><i style="font-size:50px;"
-                                                                      class="text-primary flaticon-bus"></i></div>
+                                <div class="unit-4-icon mb-3 mr-4">
+                                    <img width="30%" src="{% static 'images/frontal-truck.svg' %}" alt="">
+                                </div>
                                 <div>
-                                    <h3>Автобусы</h3>
-                                    <p style="font-family: 'Open Sans', sans-serif;">Все автобусы - в отличном
-                                        техническом состоянии.</p>
+                                    <h3>Тягачи</h3>
+                                    <p style="font-family: 'Open Sans', sans-serif;">Все наши тягачи - в отличном
+                                        техническом состоянии и соответствуют всем нормам грузоперевозок.</p>
                                 </div>
                             </div>
                         </div>
