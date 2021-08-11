@@ -17,10 +17,6 @@
                     <p><a href="{% url 'contact' %}" class="btn btn-primary py-3 px-5 text-white">Рассчитать стоимость
                         перевозки</a></p>
 
-                    {% for partner in object_list %}
-                        {{ partner.name }}
-                    {% endfor %}
-
                 </div>
             </div>
         </div>
@@ -62,7 +58,7 @@
 
     <div id="about" class="site-section">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row">
 
                 <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade">
                     <img src="{% static "images/img_1.jpg" %}" alt="" class="img-fluid rounded">
@@ -78,7 +74,8 @@
                     <p style="font-family: 'Open Sans', sans-serif;" class="mb-4">Несомненным преимуществом компании
                         является
                         парк современных тягачей, соответствующих всем европейским стандартам.</p>
-                    <p>Среди наших тягачей: <b>DAF 105</b>, <b>Mercedes Actros</b>, <b>MAN TGX</b>, <b>Reanult Magnum</b></p>
+                    <p>Среди наших тягачей: <b>DAF 105</b>, <b>Mercedes Actros</b>, <b>MAN TGX</b>, <b>Reanult
+                        Magnum</b></p>
 
                     <div class="row">
                         <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
@@ -112,6 +109,34 @@
         </div>
     </div>
 
+    <div id="about" class="site-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <h2 class="font-weight-light text-primary" data-aos="fade">Наши партнеры</h2>
+
+                    <p>Эти компании доверяют нам свой бизнес. Присоединяйтесь!</p>
+                </div>
+            </div>
+            <div class="row justify-content-between mb-5 g-5">
+
+
+                {% for partner in partners %}
+
+                    <div class="card col-3 mx-4 mb-4">
+                        <a href="{{ partner.link }}" target="_blank">
+                            <img src="{{ partner.logo }}" class="card-img-top" alt="Логотип {{ partner.name }}">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">{{ partner.name }}</p>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
     <div id="how_to_order" class="site-section bg-image overlay"
          style="background-image: url('{% static "images/minibus.jpg" %}');">
         <div class="container">

@@ -10,6 +10,7 @@ class ContactAdmin(admin.ModelAdmin):
     list_display = ('company_name', 'phone', 'cargo_name', 'volume', 'cost')
     list_filter = ('company_name', 'phone', 'email', 'cost')
 
+
 class PartnerAdmin(admin.ModelAdmin):
     list_display = ('name', 'link')
 
