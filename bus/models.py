@@ -35,7 +35,7 @@ class Contact(models.Model):
     weight = models.FloatField('Общий вес (кг) *', blank=True, default=0.1)
     cargo_name = models.CharField('Наименование груза', max_length=50, default='Груз')
     cc_place = models.CharField('Место загрузки *', max_length=50, blank=True)
-    volume = models.FloatField('Объем *', blank=True, default=0.1)
+    volume = models.FloatField('Объем (м^3) *', blank=True, default=0.1)
     transport = models.CharField('Тип транспорта *', max_length=150, blank=True)
     unloading_place = models.CharField('Место выгрузки *', max_length=150, blank=True)
     cost = models.CharField('Стоимость груза', max_length=150, blank=True)
