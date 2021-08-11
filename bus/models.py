@@ -51,7 +51,7 @@ class Contact(models.Model):
 
 class Partner(models.Model):
     name = models.CharField('Название', max_length=100)
-    logo = models.FileField('Логотип', blank=True, default='static/images/blog_1.jpg')
+    logo = models.FileField('Логотип', blank=True, default='static/images/blog_1.jpg', upload_to='partners')
     link = models.URLField('Ссылка на сайт партнера', blank=True)
 
     class Meta:
