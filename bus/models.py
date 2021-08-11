@@ -27,17 +27,17 @@ class Head(models.Model):
 
 
 class Contact(models.Model):
-    company_name = models.CharField('Название вашей компании', max_length=50, blank=True)
-    phone = models.CharField('Телефон', max_length=50, blank=True)
-    email = models.EmailField('E-mail', max_length=50, blank=True)
+    company_name = models.CharField('Название вашей компании *', max_length=50, blank=True)
+    phone = models.CharField('Телефон *', max_length=50, blank=True)
+    email = models.EmailField('E-mail *', max_length=50, blank=True)
     loading_date = models.DateField('Дата загрузки', default=timezone.now())
-    loading_place = models.CharField('Место загрузки', max_length=120, blank=True)
-    weight = models.FloatField('Общий вес (кг)', blank=True, default=0.1)
+    loading_place = models.CharField('Место загрузки *', max_length=120, blank=True)
+    weight = models.FloatField('Общий вес (кг) *', blank=True, default=0.1)
     cargo_name = models.CharField('Наименование груза', max_length=50, default='Груз')
-    cc_place = models.CharField('Место растаможки', max_length=50, blank=True)
-    volume = models.FloatField('Объем', blank=True, default=0.1)
-    transport = models.CharField('Тип транспорта', max_length=150, blank=True)
-    unloading_place = models.CharField('Место выгрузки', max_length=150, blank=True)
+    cc_place = models.CharField('Место загрузки', max_length=50, blank=True)
+    volume = models.FloatField('Объем *', blank=True, default=0.1)
+    transport = models.CharField('Тип транспорта *', max_length=150, blank=True)
+    unloading_place = models.CharField('Место выгрузки *', max_length=150, blank=True)
     cost = models.CharField('Стоимость груза', max_length=150, blank=True)
     message = models.TextField('Дополнительно', max_length=500, blank=True)
 
