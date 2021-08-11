@@ -125,7 +125,8 @@
 
                     <div class="card col-3 mx-4 mb-4">
                         <a href="{{ partner.link }}" target="_blank">
-                            <img src="{{ partner.logo }}" class="card-img-top" alt="Логотип {{ partner.name }}">
+
+                            <img src="{{ partner.logo.url }}" class="card-img-top" alt="Логотип {{ partner.name }}">
                         </a>
                         <div class="card-body">
                             <p class="card-text">{{ partner.name }}</p>
@@ -150,10 +151,9 @@
                     <div class="how-it-work-item">
                         <span class="number">1</span>
                         <div class="how-it-work-body">
-                            <h2>Называете маршрут</h2>
-                            <p style="font-size:18px;" class="mb-5">Позвоните нам и скажите, когда и куда вам нужен
-                                транспорт.
-                                А также количество людей, которых надо доставить к месту назначения.</p>
+                            <h2>Выбираете маршрут</h2>
+                            <p style="font-size:18px;" class="mb-5">Заполните <a href="{% url 'contact' %}" target="_blank">форму расчета стоимости грузоперевозки</a>
+                                или позвоните нам.</p>
 
                         </div>
                     </div>
@@ -165,8 +165,7 @@
                         <div class="how-it-work-body">
                             <h2>Заключаем договор</h2>
                             <p style="font-size:18px;" class="mb-5">Зная, когда и куда планируется поездка, мы готовим
-                                договор,
-                                в котором прописываем обязательства сторон, цены и сроки, а также гарантии
+                                договор, в котором прописываем обязательства сторон, цены и сроки, а также гарантии
                                 выполнения.</p>
 
                         </div>
@@ -177,10 +176,9 @@
                     <div class="how-it-work-item">
                         <span class="number">3</span>
                         <div class="how-it-work-body">
-                            <h2>Встречаете автобус</h2>
+                            <h2>Встречаете транспорт</h2>
                             <p style="font-size:18px;" class="mb-5">В указанное в договоре время и в назначенное место
-                                будет подан транспорт.
-                                Можете быть уверены, что никаких задержек или отмен не будет.</p>
+                                будет подан транспорт. Можете быть уверены, что никаких задержек или отмен не будет.</p>
 
                         </div>
                     </div>
