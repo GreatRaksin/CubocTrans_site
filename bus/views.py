@@ -18,11 +18,6 @@ def index_view(request):
     return render(request, 'index.html', context)
 
 
-# TODO: сделать генерацию партнеров
-#  Сетка из логотипов, отображается лого-ссылка
-#  и название фирмы-партнера
-
-
 class ContactView(FormView):
     model = Contact
     form_class = UserForm
