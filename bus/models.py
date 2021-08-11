@@ -2,7 +2,6 @@ from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils import timezone
 import os
-import datetime
 
 
 class Head(models.Model):
@@ -48,3 +47,16 @@ class Contact(models.Model):
 
     def __str__(self):
         return f'{self.company_name} {self.phone}, {self.email}'
+
+
+class Partner(models.Model):
+    name = models.CharField('Название', max_length=100)
+    logo = models.FileField('Логотип', blank=True, default='static/images/blog_1.jpg')
+    link = models.URLField('Ссылка на сайт партнера', blank=True)
+
+    class Meta:
+        verbose_name = 'Партнер'
+        verbose_name_plural = 'Партнеры'
+
+    def __str__(self):
+        return self.name
