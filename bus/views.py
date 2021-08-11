@@ -12,6 +12,7 @@ class IndexView(ListView):
     template_name = 'index.html'
     queryset = Head.objects.all()
 
+
 def index_view(request):
     context = {'object_list': Head.objects.all(),
                'partners': Partner.objects.all()}
@@ -26,6 +27,7 @@ class ContactView(FormView):
     def form_valid(self, myform):
         myform.save()  # сохранение в БД
 
+
 def contact_view(request):
     context = {'form': UserForm}
     if request.method == 'GET':
@@ -39,6 +41,5 @@ def contact_view(request):
 
 
 def success_view(request):
-    # TODO: сделать нормальную страницу успех
     return render(request, 'success.html')
 
