@@ -12,6 +12,10 @@ class IndexView(ListView):
     template_name = 'index.html'
     queryset = Head.objects.all()
 
+# TODO: сделать генерацию партнеров
+#  Сетка из логотипов, отображается лого-ссылка
+#  и название фирмы-партнера
+
 
 class ContactView(FormView):
     model = Contact
