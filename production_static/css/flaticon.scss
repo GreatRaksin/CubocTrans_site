@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?da946c5900b13f2182c25af09cd1edfc") format("truetype"),
-url("./flaticon.woff?da946c5900b13f2182c25af09cd1edfc") format("woff"),
-url("./flaticon.woff2?da946c5900b13f2182c25af09cd1edfc") format("woff2"),
-url("./flaticon.eot?da946c5900b13f2182c25af09cd1edfc#iefix") format("embedded-opentype"),
-url("./flaticon.svg?da946c5900b13f2182c25af09cd1edfc#flaticon") format("svg");
+    src: url("./flaticon.ttf?0009fb84ff7d7d07685397e8ae997eda") format("truetype"),
+url("./flaticon.woff?0009fb84ff7d7d07685397e8ae997eda") format("woff"),
+url("./flaticon.woff2?0009fb84ff7d7d07685397e8ae997eda") format("woff2"),
+url("./flaticon.eot?0009fb84ff7d7d07685397e8ae997eda#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0009fb84ff7d7d07685397e8ae997eda#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,105 +21,61 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "24-hours-support": "\f101",
-    "24-hours": "\f102",
-    "automobile": "\f103",
-    "availability": "\f104",
-    "bus-1": "\f105",
-    "bus-2": "\f106",
-    "bus-driver-1": "\f107",
-    "bus-driver": "\f108",
-    "bus": "\f109",
-    "choices": "\f10a",
-    "contract": "\f10b",
-    "dance": "\f10c",
-    "delivery": "\f10d",
-    "destination": "\f10e",
-    "discount": "\f10f",
-    "file": "\f110",
-    "low-price": "\f111",
-    "low-prices": "\f112",
-    "luggage": "\f113",
-    "minibus": "\f114",
-    "sales": "\f115",
-    "seminar": "\f116",
-    "sunbathing": "\f117",
-    "travel-map": "\f118",
-    "wedding-couple": "\f119",
+    "document": "\f101",
+    "trust": "\f102",
+    "insurance": "\f103",
+    "trailer": "\f104",
+    "travel-map": "\f105",
+    "discount": "\f106",
+    "driving-test": "\f107",
+    "24-hours": "\f108",
+    "frontal-truck": "\f109",
+    "truck": "\f10a",
+    "company": "\f10b",
+    "shipped": "\f10c",
+    "shipping": "\f10d",
+    "protected": "\f10e",
 );
 
-.flaticon-24-hours-support:before {
-    content: map-get($flaticon-map, "24-hours-support");
+.flaticon-document:before {
+    content: map-get($flaticon-map, "document");
 }
-.flaticon-24-hours:before {
-    content: map-get($flaticon-map, "24-hours");
+.flaticon-trust:before {
+    content: map-get($flaticon-map, "trust");
 }
-.flaticon-automobile:before {
-    content: map-get($flaticon-map, "automobile");
+.flaticon-insurance:before {
+    content: map-get($flaticon-map, "insurance");
 }
-.flaticon-availability:before {
-    content: map-get($flaticon-map, "availability");
-}
-.flaticon-bus-1:before {
-    content: map-get($flaticon-map, "bus-1");
-}
-.flaticon-bus-2:before {
-    content: map-get($flaticon-map, "bus-2");
-}
-.flaticon-bus-driver-1:before {
-    content: map-get($flaticon-map, "bus-driver-1");
-}
-.flaticon-bus-driver:before {
-    content: map-get($flaticon-map, "bus-driver");
-}
-.flaticon-bus:before {
-    content: map-get($flaticon-map, "bus");
-}
-.flaticon-choices:before {
-    content: map-get($flaticon-map, "choices");
-}
-.flaticon-contract:before {
-    content: map-get($flaticon-map, "contract");
-}
-.flaticon-dance:before {
-    content: map-get($flaticon-map, "dance");
-}
-.flaticon-delivery:before {
-    content: map-get($flaticon-map, "delivery");
-}
-.flaticon-destination:before {
-    content: map-get($flaticon-map, "destination");
-}
-.flaticon-discount:before {
-    content: map-get($flaticon-map, "discount");
-}
-.flaticon-file:before {
-    content: map-get($flaticon-map, "file");
-}
-.flaticon-low-price:before {
-    content: map-get($flaticon-map, "low-price");
-}
-.flaticon-low-prices:before {
-    content: map-get($flaticon-map, "low-prices");
-}
-.flaticon-luggage:before {
-    content: map-get($flaticon-map, "luggage");
-}
-.flaticon-minibus:before {
-    content: map-get($flaticon-map, "minibus");
-}
-.flaticon-sales:before {
-    content: map-get($flaticon-map, "sales");
-}
-.flaticon-seminar:before {
-    content: map-get($flaticon-map, "seminar");
-}
-.flaticon-sunbathing:before {
-    content: map-get($flaticon-map, "sunbathing");
+.flaticon-trailer:before {
+    content: map-get($flaticon-map, "trailer");
 }
 .flaticon-travel-map:before {
     content: map-get($flaticon-map, "travel-map");
 }
-.flaticon-wedding-couple:before {
-    content: map-get($flaticon-map, "wedding-couple");
+.flaticon-discount:before {
+    content: map-get($flaticon-map, "discount");
+}
+.flaticon-driving-test:before {
+    content: map-get($flaticon-map, "driving-test");
+}
+.flaticon-24-hours:before {
+    content: map-get($flaticon-map, "24-hours");
+}
+.flaticon-frontal-truck:before {
+    content: map-get($flaticon-map, "frontal-truck");
+}
+.flaticon-truck:before {
+    content: map-get($flaticon-map, "truck");
+}
+.flaticon-company:before {
+    content: map-get($flaticon-map, "company");
+}
+.flaticon-shipped:before {
+    content: map-get($flaticon-map, "shipped");
+}
+.flaticon-shipping:before {
+    content: map-get($flaticon-map, "shipping");
+}
+.flaticon-protected:before {
+    content: map-get($flaticon-map, "protected");
 }
