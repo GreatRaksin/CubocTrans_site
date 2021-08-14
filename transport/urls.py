@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.db import models
 from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 
 admin.site.site_header = 'Кубоктранс | Международные перевозки'  # Вместо "Администрирование Django" в админке
 
@@ -28,5 +29,6 @@ urlpatterns = [
     path('', index_view, name="index"),
     path('contact', contact_view, name='contact'),
     path('success', success_view, name='success'),
+    path('favicon\.ico$', RedirectView.as_view(url='images/favicon.ico'), name='favicon'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
